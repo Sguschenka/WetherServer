@@ -11,15 +11,15 @@ public class DataBaseTest {
 
     @Test
     public void getWeatherTest() throws SQLException {
-        String result = DataBase.Weather.getWeather("Piter");
-        assertEquals("-10", result);
+        String result = DataBase.Weather.getWeather("Hell");
+        assertEquals("+3000", result);
     }
 
     @Test
     public void getCitiesTest() throws SQLException{
         Set<String> result = (Set<String>) DataBase.Weather.getCities();
-        assertEquals(5,result.size());
-        assertTrue(result.contains("Piter"));
+        assertEquals(7,result.size());
+        assertTrue(result.contains("Hell"));
 
     }
 
